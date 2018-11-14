@@ -17,6 +17,10 @@ Possono essere linkate direttamente le risorse (es. repositories)
 
 # migrazione: dai servizi monolitici ai microservizi
 1. creazione della infrastruttura di rete
+  1. la rete si chiama uosmr.arpa.local
+  2. i nodi dello swarm in produzione si chiamano _nodo1.uosmr.arpa.local_, _nodo2.uosmr.arpa.local_, ecc.
+  3. i database si chiamano _dbmeteo.uosmr.arpa.local_, _dbaib.uosmr.arpa.local_, _dbsyslog.uosmr.arpa.local_
+  3. i microservizi (quando devono essere visibili dall'esterno, altrimenti avranno semplicemente dei nomi _parlanti_) si chiamano _wikiss.uosmr.arpa.local_, _remwsgwyd.uosmr.arpa.local_, _ghost.uosmr.arpa.local_, ecc.
 2. realizzazione delle repliche dei database
    1. replica di dbMeteo in cluster swarm (MariaDB)
    2. replica di dbAIB in cluster swarm (Postgres)
