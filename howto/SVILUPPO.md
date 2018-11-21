@@ -16,7 +16,7 @@ Gli elementi di base sono:
 ```
 docker run -it <nome dell'immagine> -e "<variabile d'ambiente>=<valore della variabile"
 ```
-Anche il _Dockerfile_ è contenuto nel repository
+Anche il _Dockerfile_ è contenuto nel repository.
 3. L'__immagine__ di docker: viene costruita automaticamente attraverso il collegamento del repository di github con il repository di docker, detto anche _docker trusted registry DTR_; in realtà questo repository è pubblico e consente a chiunque di scaricare l'immagine docker ed eseguire l'applicazione. Tuttavia, chi esegue l'applicazione deve fornire quei parametri indispensabili per l'applicazione stessa, che sono generalmente conservati nelle variabili d'ambiente (e che devono essere conosciute e adeguate all'architettura dove viene eseguito il codice, ad esempio nomi di database, indirizzi ip, password di database, ecc.)
 
 ## ciclo di sviluppo : semplice
