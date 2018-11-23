@@ -2,11 +2,21 @@
 - name: primo tentativo
   hosts: localhost
   gather_facts: false
-  handlers:
-  - name: start a container
-    service: name=docker state=restarted
-  tasks:
+    tasks:
   - name: fai partire hello_world
     docker_container:
       name: hello_world
       image: hello-world:latest
+- name: primo tentativo db
+  hosts: database-test
+  become:yes
+    tasks:
+      environment:
+        - POSTGRES_DB=mydb
+        - POSTGRES_USER=admin
+        - POSTGRES_PASS=admin
+        - PGDATA=/var/lib/pgsql/data/userdata
+  - name: fai partire postgres
+      docker_container:
+        name: db_test_postgres-9.3
+        image: postgres:9.3
