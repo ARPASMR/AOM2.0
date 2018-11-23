@@ -1,0 +1,12 @@
+---
+- name: primo tentativo
+  hosts: localhost
+  gather_facts: false
+  handlers:
+  - name: start a container
+    service: name=docker state=restarted
+  tasks:
+  - name: fai partire hello_world
+    docker_container:
+      name: hello_world
+      image: hello_world:latest
