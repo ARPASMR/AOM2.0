@@ -9,4 +9,4 @@
   - name: fai partire hello_world
     docker_container:
       name: hello_world
-      image: hello_world:latest
+      image: hello-world:latest
