@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: database-test
   tasks:
   - name: Run database container
     docker_container:

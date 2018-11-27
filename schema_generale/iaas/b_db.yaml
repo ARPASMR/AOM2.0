@@ -1,0 +1,12 @@
+---
+- hosts: database-test
+  tasks:
+  - name: Run database container
+    docker_container:
+      name: 'database'
+      image: 'docker.io/centos/postgresql-96-centos7'
+      state: 'started'
+      env:
+        POSTGRESQL_USER: 'user'
+        POSTGRESQL_PASSWORD: 'password'
+        POSTGRESQL_DATABASE: 'my_db'
