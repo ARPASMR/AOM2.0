@@ -1,5 +1,8 @@
 # Schema generale dell'infrastruttura
 
+## prerequisiti
+Per lanciare ansible occorre aver fatto lo scambio delle chiavi ssh sui server 
+
 ## iaas - infrastructure as a service
 Contiene i playbook di ansible per la creazione dell'infrastruttura.
 Per eseguire i comandi di docker attraverso ansuible deve essere installato il pacchetto docker-py di python
