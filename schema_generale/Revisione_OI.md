@@ -39,7 +39,7 @@ I processi in cui è implementato l’algoritmo si differenziano su numero di
 grandezze analizzate e sul post-processing o pre-processing, ma hanno tutti la
 stessa struttura informatica descritta in figura:
 
-![](media/68d9a616c17416f4dc0a1f081658f4c6.png)
+![](SchemaOI.png)
 
 Schematicamente: le osservazioni risiedono nel DBmeteo, un blocco di codici (di
 “**input**”) esegue l’estrazione e la scrittura in formato GrADS stazione
@@ -79,7 +79,7 @@ sfruttando tramite traduttori asci-grads e grads-ascii i codici esistenti sia di
 calcolo che di produzione output (script di transcodifica da sviluppare
 ex-novo).
 
-![](media/422596764fa34100ea0561260806e885.png)
+![](SchemaOI_rev_1.png)
 
 Questo nuovo assetto prevede, quando in modalità operativa, un solo processo di
 estrazione dal DBmeteo per ogni grandezza e un solo processo di calcolo dei
@@ -224,7 +224,7 @@ Questo passo può anche essere fatto in collaborazione con C. Lussana \@ MET NO,
 o su base economica (\~700€&/gg) o su base di collaborazione volontaria
 strutturata.
 
-![](media/c7053b3119c5f26724489e65eb64b1ea.png)
+![](SchemaOI_rev_2.png)
 
 Terza revisione: schema di interpolazione RH, VV, PA, RG
 ========================================================
